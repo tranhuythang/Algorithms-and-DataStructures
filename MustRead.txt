@@ -1,0 +1,32 @@
+
+Experience:
+https://leetcode.com/discuss/interview-experience/599592/amazon-sde1-offer-experience-lessons-learned
+
+There are arguably 15 (plus/minus) common patterns that fit all problems!!!
+
+Leetcode pattern:
+https://medium.com/leetcode-patterns
+https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU
+
+Sliding Window
+Prefix Sum
+2 Pointer
+Binary Search(Yeah Yeah I know binary search .... really then solve some hard medium level of problems on leetcode you know why I kept this under famous patters
+floodfill
+Roaming on a 2d Array: graph (you should be running on graph left, right center, backward inwards, without any issues.
+LCS
+LPS
+0/1 Knapsack
+Unbounded Knapsack
+Matrix Chain Multiplication
+RECURSION
+
+Thang's pattern:
+Dynamic Programming
+Pattern 1: The string/subarray ending at a[n+1]: p[n+1] = ...
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+https://leetcode.com/problems/maximum-subarray/
+Pattern 2:
+https://leetcode.com/problems/longest-palindromic-substring/
+
+https://seanprashad.com/leetcode-patterns/
