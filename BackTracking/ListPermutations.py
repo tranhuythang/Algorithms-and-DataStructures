@@ -1,4 +1,19 @@
 def ListPermutation(input):
+    """
+    List all permutation of a given set
+    Backtracking: a permutation is (p0, p1, ..., pn).
+    recursive assign(i):
+    calculate Si = possible values for pi
+    for each value s in Si:
+        assign pi = s
+        if i == n:
+            add assigned values as a solution
+        else:
+            assign(i+1)
+
+    :param input:
+    :return:
+    """
     L = len(input)
     original_set = set(input)
     current_permutation = [None for i in range(L)]
