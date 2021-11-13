@@ -1,3 +1,8 @@
+"""
+Find all positions for n queens on nxn chess board so that no two queens attacking each other
+Solution: backtracking, i.e. assign a position for 1st queen, and recursively assign a position for 2nd queen, and so on.
+Note that in nxn chess board, each queen is on a row.
+"""
 import collections
 class Solution:
     def __init__(self):
