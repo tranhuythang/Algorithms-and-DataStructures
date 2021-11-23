@@ -19,9 +19,11 @@ def bestTimeBuySell(prices):
     if n <= 1:
         return 0
     p[1] = prices[1] - prices[0]
+    maxProfit = max(0, p[1])
     for k in range(1, n-1):
         p[k+1] = prices[k+1] - min(prices[k], prices[k] - p[k])
-    return max(p)
+        maxProfit = max(maxProfit, p[k+1])
+    return maxProfit
 
 
 test = [[7,1,5,3,6,4], [7,6,4,3,1], [1, 2, 3, 9, 7, 4, 8], [1, 2, 4, 8, 6, 5, 0, 9], [1, 2, 4, 8, 6, 5, 0, 2], [6, 4, 1, 0, -2], [2,1,2,1,0,1,2], [2,0,2,1,0,1,2]]
