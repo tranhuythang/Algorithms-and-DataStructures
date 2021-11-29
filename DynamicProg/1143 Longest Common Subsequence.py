@@ -5,8 +5,8 @@ Dynamic Programming algorithm: Let LCS(i, j) be the longest common substring of 
 with first j characters
 LCS[i][j] = LCS[i-1][j-1] + 1 if text1[i] = text2[j]
           = max(LCS[i][j-1], LCS[i-1][j]) if text1[i] != text2[j]
-Time-Complexity: O(n^2)
-Space-Complexity: O(n^2)
+Time-Complexity: O(n1xn2)
+Space-Complexity: O(n1xn2)
 """
 def LongestCommonSubsequence(text1, text2):
     n1 = len(text1)
