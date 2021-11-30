@@ -1,12 +1,12 @@
 """
-Problem: Given two strings text1 and text2, return the length of their longest common subsequence. If there is no common
+* Problem: Given two strings text1 and text2, return the length of their longest common subsequence. If there is no common
 subsequence, return 0. Note: "ace" is a subsequence of "abcde".
-Dynamic Programming algorithm: Let LCS(i, j) be the longest common substring of text1 with first i characters, text2
+* Dynamic Programming algorithm: Let LCS(i, j) be the longest common substring of text1 with first i characters, text2
 with first j characters
 LCS[i][j] = LCS[i-1][j-1] + 1 if text1[i] = text2[j]
           = max(LCS[i][j-1], LCS[i-1][j]) if text1[i] != text2[j]
-Time-Complexity: O(n1xn2)
-Space-Complexity: O(n1xn2)
+* Time-Complexity: O(n1xn2)
+* Space-Complexity: O(n1xn2)
 """
 def LongestCommonSubsequence(text1, text2):
     n1 = len(text1)
