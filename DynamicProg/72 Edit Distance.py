@@ -11,8 +11,8 @@ E(i, j) = E(i-1, j-1) + diff where diff = 1 if word1[i] != word2[j], 0 if word1[
 Since we don't know which operation is the best,
 E(i, j) = min(E(i-1, j) + 1, E(i, j-1) + 1, E(i-1, j-1) + diff)
 The base case E(0, i) = i when word1 is empty and E(i, 0) = i when word2 is empty.
-* Time-complexity: O(n^2)
-* Space-complexity: O(n^2)
+* Time-complexity: O(n1xn2)
+* Space-complexity: O(n1xn2)
 """
 def edit_distance(word1, word2):
     n1 = len(word1)
