@@ -7,35 +7,6 @@ def LongestPalindromSubstring(arr):
     :param arr:
     :return:
     """
-    # The following is wrong
-    # L = len(arr)
-    # p = [-1 for i in range(L)]
-    # p[0] = 1
-    # maxLength = [1, 0]
-    # if arr[1] == arr[0]:
-    #     p[1] = 2
-    #     maxLength[0] = 1
-    #     maxLength[1] = 1
-    # else:
-    #     p[1] = 1
-    #     maxLength[0] = 1
-    #     maxLength[1] = 1
-    # for n in range(1, L-1):
-    #     if arr[n+1] == arr[n - p[n]]:
-    #         p[n+1] = p[n] + 2
-    #     else:
-    #         if arr[n+1] == arr[n]:
-    #             p[n+1] = 2
-    #         else:
-    #             p[n+1] = 1
-    #     if maxLength[0] < p[n+1]:
-    #         maxLength[0] = p[n+1]
-    #         maxLength[1] = n+1
-    # print('*********')
-    # print("p = ", p)
-    # for i in range(L):
-    #     print(arr[i - p[i] +1 : i+1 : 1])
-    # return (maxLength[0], arr[maxLength[1]-maxLength[0]+1:maxLength[1]+1:1])
 
     def findRadius(left, right):
         radius = 0
