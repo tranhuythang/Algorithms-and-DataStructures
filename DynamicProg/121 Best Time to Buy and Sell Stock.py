@@ -7,12 +7,17 @@ def bestTimeBuySell(prices):
     Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 
     Dynamic Programming Solution:
-    Let p[n] be the max profit (which can be negative) when selling at prices[n]
-    p[1] = prices[1] - prices[0]
+    Let p[n+1] = price[n+1] - min{p[i]: i <= n}
+    (so p[n+1] be the max profit (which can be negative) when selling at prices[n+1])
     p[n+1] = prices[n+1] - buy[n+1]
-    where buy[n+1] = min(prices[n], buy[n])
+    where buy[n+1] = min{p[i]: i <= n}
+                   = min(buy[n], prices[n])
           buy[n] = prices[n] - p[n]
     so p[n+1] = prices[n+1] - min(prices[n], prices[n] - p[n])
+    p[1] = prices[1] - prices[0]
+    maxProfit = max(0, {p[i]: i <= n})
+    Time-complexity: O(n)
+    Space-complexity: O(n)
     """
     n = len(prices)
     p = [0 for i in range(n)]
