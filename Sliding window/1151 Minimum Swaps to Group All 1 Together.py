@@ -1,5 +1,6 @@
 """
-*Problem: Given a binary array data, return the minimum number of swaps required to group all 1’s present in the array
+*Problem: 1151. Minimum Swaps to Group All 1's Together
+Given a binary array data, return the minimum number of swaps required to group all 1’s present in the array
 together in any place in the array. You can swap any two element in the array.
 *Algorithm: Sliding window
 Let count_1 be the number of 1's. The goal is that from a window of size count_1, swap all 0 inside the window with 1
