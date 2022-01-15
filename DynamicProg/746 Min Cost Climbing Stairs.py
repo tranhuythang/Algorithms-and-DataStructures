@@ -20,11 +20,11 @@ Let result[k] (0-based index) be the minimum cost to be on the kth step, so the 
 base case: set result[0] = result[1] = 0
 recurrence: result[k+1] = min(result[k] + cost[k], result[k-1] + cost[k-1])
 * Time-complexity: O(n)
-* Space-complexity: O(n)
+* Space-complexity: O(n) can be reduced to O(1)
 """
 def minCostClimbingStairs(cost):
     n = len(cost)
     result = [0 for i in range(n+1)]
     for k in range(2, n+1):
-        result[k] = min(result[k-1] + cost[k-1], result[k-2] + cost[k-2])
+        result[k] = min(result[k-1] + cost[k-1], result[k-2] + cost[k-2]) # space: O(n) can be reduced to O(1)
     return result[n]
