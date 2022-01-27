@@ -127,8 +127,6 @@ def longestOnes_DynamicProgram(nums, k):
 #
 #     return max_one_count+k
 
-
-
 a = [[0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1], 3]
 # a = [[1,1,1,0,0,0,1,1,1,1,0], 2]
 # a = [[0,0,1,1,1,0,0], 0]
